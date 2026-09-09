@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.graphic_interface_lab1.NewsController">
+<top>
+   <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <children>
+         <ImageView fx:id="btn" fitHeight="28.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@depositphotos_267590354-stock-illustration-journalism-theme-vector-emblem-created.jpg" />
+            </image>
+         </ImageView>
+         <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="249.0" spacing="20.0">
+            <children>
+               <Label text="Acasa" />
+               <Label text="Noutati" />
+               <Label text="Blog" />
+               <Label text="Contact" />
+            </children>
+            <padding>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+            </padding>
+         </HBox>
+      </children>
+      <padding>
+         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding>
+   </HBox>
+</top>
+<left>
+   <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+      <children>
+         <Label text="Beggining" />
+         <Label text="Middle" />
+         <Label text="Final" />
+         <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="25.0" prefWidth="75.0" text="Next task" />
+      </children>
+      <padding>
+         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding>
+   </VBox>
+</left>
+<bottom>
+   <Label prefHeight="57.0" prefWidth="602.0" text="All rights are reserved . designed and implemented by ady" BorderPane.alignment="CENTER">
+      <padding>
+         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding>
+   </Label>
+</bottom>
+<center>
+   <TextArea prefHeight="200.0" prefWidth="200.0" text="Ulrich Siegmund’s highly successful campaign points to a more durable AfD &#10;electorate and flags the tests ahead for Chancellor Merz’s government, the&#10; CDU and the federal institutions that have shaped post-war German democracy." BorderPane.alignment="CENTER">
+      <padding>
+         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding>
+   </TextArea>
+</center>
+</BorderPane>
