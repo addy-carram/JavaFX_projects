@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="655.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.catalog_products_interface_lab3_4.Product_CatalogControler">
+   <children>
+      <BorderPane layoutX="20.0" layoutY="21.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+         <top>
+            <HBox prefHeight="50.0" prefWidth="600.0" spacing="30.0" style="-fx-background-color: #8290EB;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Catalog" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Blog" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Contact" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <bottom>
+            <GridPane hgap="20.0" prefHeight="453.0" prefWidth="681.0" style="-fx-background-color: #E1E5FA;" vgap="20.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="113.0" prefWidth="124.0" style="-fx-border-color: #92A6EB; -fx-background-color: #F1F4FF;">
+                     <children>
+                        <ImageView id="image1" fitHeight="99.0" fitWidth="107.0" pickOnBounds="true" style="visibility: visible;">
+                           <image>
+                              <Image url="@../../../assests/tele8.jpg" />
+                           </image></ImageView>
+                        <VBox prefHeight="114.0" prefWidth="179.0" spacing="10.0">
+                           <children>
+                              <Label text="Televizor Philips 65OLED803 " />
+                              <Label text=" 65&quot; / OLED / UHD 4K" />
+                              <Label text="15.000 lei" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="113.0" prefWidth="124.0" style="-fx-border-color: #92A6EB; -fx-background-color: #F1F4FF;" GridPane.columnIndex="1">
+                     <children>
+                        <ImageView id="image1" fitHeight="99.0" fitWidth="107.0" pickOnBounds="true" style="visibility: visible;">
+                           <image>
+                              <Image url="@../../../assests/tele1.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="114.0" prefWidth="179.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="Televizor Philips 65OLED803 " />
+                              <Label text=" 65&quot; / OLED / UHD 4K" />
+                              <Label text="15.000 lei" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="113.0" prefWidth="124.0" style="-fx-border-color: #92A6EB; -fx-background-color: #F1F4FF;" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView id="image1" fitHeight="99.0" fitWidth="107.0" pickOnBounds="true" style="visibility: visible;">
+                           <image>
+                              <Image url="@../../../assests/tele2.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="114.0" prefWidth="179.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="Televizor Philips 65OLED803 " />
+                              <Label text=" 65&quot; / OLED / UHD 4K" />
+                              <Label text="15.000 lei" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="113.0" prefWidth="124.0" style="-fx-border-color: #92A6EB; -fx-background-color: #F1F4FF;" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView id="image1" fitHeight="99.0" fitWidth="107.0" pickOnBounds="true" style="visibility: visible;">
+                           <image>
+                              <Image url="@../../../assests/tele5.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="114.0" prefWidth="179.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="Televizor Philips 65OLED803 " />
+                              <Label text=" 65&quot; / OLED / UHD 4K" />
+                              <Label text="15.000 lei" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="113.0" prefWidth="124.0" style="-fx-border-color: #92A6EB; -fx-background-color: #F1F4FF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView id="image1" fitHeight="99.0" fitWidth="107.0" pickOnBounds="true" style="visibility: visible;">
+                           <image>
+                              <Image url="@../../../assests/tele3.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="114.0" prefWidth="179.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="Televizor Philips 65OLED803 " />
+                              <Label text=" 65&quot; / OLED / UHD 4K" />
+                              <Label text="15.000 lei" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="113.0" prefWidth="124.0" style="-fx-border-color: #92A6EB; -fx-background-color: #F1F4FF;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView id="image1" fitHeight="99.0" fitWidth="107.0" pickOnBounds="true" style="visibility: visible;">
+                           <image>
+                              <Image url="@../../../assests/tele7.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="114.0" prefWidth="179.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="Televizor Philips 65OLED803 " />
+                              <Label text=" 65&quot; / OLED / UHD 4K" />
+                              <Label text="15.000 lei" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+               </padding>
+            </GridPane>
+         </bottom>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
