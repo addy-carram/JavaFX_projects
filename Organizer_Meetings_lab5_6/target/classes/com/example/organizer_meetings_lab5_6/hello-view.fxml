@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26">
+  <tabs>
+    <Tab text="meetings">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #D4E7F0;">
+               <children>
+                  <VBox layoutY="-1.0" prefHeight="343.0" prefWidth="600.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="600.0" spacing="40.0" style="-fx-background-color: #8DD7F7;">
+                           <children>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Nr">
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Date">
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Price">
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Nr Participants">
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="600.0" spacing="30.0" style="-fx-background-color: #DAF2FC; -fx-border-color: #0CB4FC;">
+                           <children>
+                              <Label text="1" />
+                              <Label prefHeight="17.0" prefWidth="88.0" text="Developing soft" />
+                              <DatePicker prefHeight="25.0" prefWidth="70.0" />
+                              <Spinner prefHeight="25.0" prefWidth="60.0" />
+                              <Spinner prefHeight="25.0" prefWidth="68.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="600.0" spacing="30.0" style="-fx-border-color: #0CB4FC; -fx-background-color: #DAF2FC;">
+                           <children>
+                              <Label text="2" />
+                              <Label prefHeight="17.0" prefWidth="88.0" text="Developing soft" />
+                              <DatePicker prefHeight="25.0" prefWidth="70.0" />
+                              <Spinner prefHeight="25.0" prefWidth="60.0" />
+                              <Spinner prefHeight="25.0" prefWidth="68.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="600.0" spacing="30.0" style="-fx-border-color: #0CB4FC; -fx-background-color: #DAF2FC;">
+                           <children>
+                              <Label text="3" />
+                              <Label prefHeight="17.0" prefWidth="88.0" text="Developing soft" />
+                              <DatePicker prefHeight="25.0" prefWidth="70.0" />
+                              <Spinner prefHeight="25.0" prefWidth="60.0" />
+                              <Spinner prefHeight="25.0" prefWidth="68.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="600.0" spacing="30.0" style="-fx-border-color: #0CB4FC; -fx-background-color: #DAF2FC;">
+                           <children>
+                              <Label text="4" />
+                              <Label prefHeight="17.0" prefWidth="88.0" text="Developing soft" />
+                              <DatePicker prefHeight="25.0" prefWidth="70.0" />
+                              <Spinner prefHeight="25.0" prefWidth="60.0" />
+                              <Spinner prefHeight="25.0" prefWidth="68.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="600.0" spacing="30.0" style="-fx-border-color: #0CB4FC; -fx-background-color: #DAF2FC;">
+                           <children>
+                              <Label text="5" />
+                              <Label prefHeight="17.0" prefWidth="88.0" text="Developing soft" />
+                              <DatePicker prefHeight="25.0" prefWidth="70.0" />
+                              <Spinner prefHeight="25.0" prefWidth="60.0" />
+                              <Spinner prefHeight="25.0" prefWidth="68.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="600.0" spacing="30.0" style="-fx-border-color: #0CB4FC; -fx-background-color: #DAF2FC;">
+                           <children>
+                              <Label text="6" />
+                              <Label prefHeight="17.0" prefWidth="88.0" text="Developing soft" />
+                              <DatePicker prefHeight="25.0" prefWidth="70.0" />
+                              <Spinner prefHeight="25.0" prefWidth="60.0" />
+                              <Spinner prefHeight="25.0" prefWidth="68.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="project">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #8DD7F7;">
+               <children>
+                  <VBox layoutX="185.0" layoutY="24.0" prefHeight="324.0" prefWidth="204.0" spacing="20.0" style="-fx-border-color: #0CB4FC; -fx-border-width: 2; -fx-background-color: #DAF2FC;">
+                     <children>
+                        <Button mnemonicParsing="false" style="-fx-background-color: #0EE7C3; -fx-border-color: green;" text="Active" />
+                        <Label text="Developing software app" />
+                        <Label text="Dan Stepanciuc" />
+                        <DatePicker />
+                        <Spinner />
+                        <TextField prefHeight="84.0" prefWidth="160.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <Button layoutX="462.0" layoutY="321.0" mnemonicParsing="false" style="-fx-background-color: #FF1654; -fx-border-color: red;" text="Delete" textFill="WHITE" />
+                  <Button layoutX="524.0" layoutY="321.0" mnemonicParsing="false" style="-fx-background-color: #F3FFBD; -fx-border-color: yellow;" text="Edit" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
