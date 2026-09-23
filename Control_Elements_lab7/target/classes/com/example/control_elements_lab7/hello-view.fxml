@@ -12,7 +12,6 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -73,30 +72,23 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Slider fx:id="volumeSlider1" layoutX="45.0" layoutY="315.0" prefHeight="14.0" prefWidth="273.0" />
-                  <ProgressBar fx:id="volumeProgressBar1" layoutX="457.0" layoutY="38.0" prefHeight="18.0" prefWidth="114.0" progress="0.0" />
-                  <ProgressIndicator fx:id="volumeIndicator1" layoutX="544.0" layoutY="69.0" progress="0.0" />
-                  <ScrollBar fx:id="zoomScrollBar1" layoutX="448.0" layoutY="119.0" prefHeight="14.0" prefWidth="79.0" />
-                  <Label fx:id="lblZoom1" layoutX="543.0" layoutY="118.0" text="Label" />
-                  <ImageView fitHeight="255.0" fitWidth="339.0" layoutX="45.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../assests/tele3.jpg" />
-                     </image>
-                  </ImageView>
+                   <Slider fx:id="imageSlider" layoutX="133.0" layoutY="297.0" max="500.0" min="100.0" prefWidth="200.0" value="300.0" />
+                  <ImageView fx:id="imageView" fitHeight="194.0" fitWidth="258.0" layoutX="113.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="btnNext" layoutX="398.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleNextImage" text="&gt;" />
+                  <Button fx:id="btnPrev" layoutX="54.0" layoutY="238.0" mnemonicParsing="false" onAction="#handlePrevImage" text="&lt;" />
+                  <Label fx:id="lblEroareImagine" layoutX="221.0" layoutY="39.0" />
                </children>
             </AnchorPane>
          </content>
       </Tab>
-      <Tab text="Agenda">
+      <Tab text="Cronometru">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Slider fx:id="volumeSlider11" layoutX="217.0" layoutY="129.0" />
-                  <ProgressBar fx:id="volumeProgressBar11" layoutX="371.0" layoutY="38.0" prefWidth="200.0" progress="0.0" />
-                  <ProgressIndicator fx:id="volumeIndicator11" layoutX="544.0" layoutY="69.0" progress="0.0" />
-                  <Spinner fx:id="volumeSpinner11" layoutX="213.0" layoutY="262.0" />
-                  <ScrollBar fx:id="zoomScrollBar11" layoutX="237.0" layoutY="307.0" />
-                  <Label fx:id="lblZoom11" layoutX="381.0" layoutY="306.0" text="Label" />
+                  <Spinner fx:id="spinnerCronometruMinute" layoutX="200.0" layoutY="231.0" prefHeight="25.0" prefWidth="97.0" />
+                  <Spinner fx:id="spinnerCronometruSecunde" layoutX="314.0" layoutY="231.0" prefHeight="25.0" prefWidth="86.0" />
+                  <Button fx:id="btnStartCronometru" layoutX="200.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleStartCronometru" prefHeight="25.0" prefWidth="200.0" text="start" />
+                  <ProgressIndicator fx:id="progressCronometru" layoutX="226.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="156.0" prefWidth="143.0" progress="0.0" />
                </children>
             </AnchorPane>
          </content>
