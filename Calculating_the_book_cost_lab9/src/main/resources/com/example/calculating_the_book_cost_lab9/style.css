@@ -1,0 +1,15 @@
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
+.button:hover {
+    -fx-background-color: #388E3C;
+}
+.button:disabled {
+    -fx-background-color: #bdbdbd;
+}
+.label-total {
+    -fx-text-fill: #1d0000;
+    -fx-font-size: 16px;
+}
