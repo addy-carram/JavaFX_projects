@@ -1,0 +1,39 @@
+.root {
+    -violet-fundal: #F3EEFF;
+    -violet-mediu: #D9C9FF;
+    -violet-accent: #8B5CF6;
+    -roz: #F472B6;
+    -turcoaz: #2DD4BF;
+    -galben: #FBBF24;
+    -text: #3B2A66;
+
+    -fx-background-color: -violet-fundal;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: -text;
+}
+
+.menu-bar { -fx-background-color: -violet-mediu; }
+.menu-bar .label { -fx-text-fill: -text; }
+
+.tool-bar { -fx-background-color: -violet-fundal; -fx-padding: 8; }
+
+.button {
+    -fx-background-color: -violet-mediu;
+    -fx-background-radius: 10;
+    -fx-text-fill: -text;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-background-color: -violet-accent; -fx-text-fill: white; }
+.button:disabled { -fx-opacity: 0.4; }
+
+.btn-nou      { -fx-background-color: -turcoaz; }
+.btn-salveaza { -fx-background-color: -roz; }
+.btn-majuscule{ -fx-background-color: -galben; }
+
+.text-area { -fx-background-color: white; -fx-background-radius: 8; }
+.text-area .content { -fx-background-color: white; }
+
+.bara-stare {
+    -fx-background-color: -violet-mediu;
+    -fx-padding: 6 12 6 12;
+}
