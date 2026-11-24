@@ -1,0 +1,122 @@
+/* ===== BAZA ===== */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: linear-gradient(to bottom, -color-fundal-sus, -color-fundal-jos);
+}
+.antet {
+    -fx-background-color: -color-antet;
+    -fx-padding: 8 16;
+    -fx-alignment: center-right;
+}
+.antet .label { -fx-text-fill: -color-text-antet; }
+
+.card {
+    -fx-background-color: -color-card;
+    -fx-background-radius: 16;
+    -fx-border-color: -color-contur;
+    -fx-border-radius: 16;
+    -fx-padding: 16;
+}
+.eticheta-mica {
+    -fx-text-fill: -color-primar;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+#titlu-acum {
+    -fx-text-fill: -color-text;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+.artist-acum { -fx-text-fill: -color-primar; }
+#timp-acum {
+    -fx-text-fill: -color-text-secundar;
+    -fx-font-size: 13px;
+}
+
+/* ===== RÂNDUL DE PLAYLIST (ToggleButton) ===== */
+.rand-piesa {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 14;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+.baza {                                  /* partea care încă nu a fost parcursă */
+    -fx-background-color: -color-primar;
+    -fx-opacity: 0.5;                    /* 50% vizibilitate */
+}
+.plin {                                  /* partea parcursă din piesă */
+    -fx-background-color: -color-primar;
+    -fx-opacity: 1;                      /* 100% vizibilitate */
+}
+.continut-rand { -fx-padding: 0 16; }
+.rand-piesa .label {                     /* umbră mică: textul rămâne lizibil pe orice parte */
+    -fx-effect: dropshadow(gaussian, -color-umbra-text, 3, 0.5, 0, 1);
+}
+.titlu-piesa {
+    -fx-text-fill: -color-text-rand;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+.artist-piesa {
+    -fx-text-fill: -color-text-rand;
+    -fx-opacity: 0.85;
+    -fx-font-size: 12px;
+}
+.timp-piesa {
+    -fx-text-fill: -color-text-rand;
+    -fx-font-size: 13px;
+}
+
+/* ---- triggere standard ---- */
+.rand-piesa:hover    { -fx-effect: dropshadow(gaussian, -color-primar, 10, 0.2, 0, 0); }
+.rand-piesa:pressed  { -fx-translate-y: 1; }
+.rand-piesa:focused  { -fx-effect: dropshadow(gaussian, -color-focus, 8, 0.4, 0, 0); }
+.rand-piesa:selected { -fx-effect: dropshadow(gaussian, -color-primar, 14, 0.3, 0, 0); }
+.rand-piesa:selected:hover {             /* trigger combinat */
+    -fx-effect: dropshadow(gaussian, -color-focus, 16, 0.35, 0, 0);
+}
+/* ---- pseudo-clase proprii, comutate din cod ---- */
+.rand-piesa:pornit .timp-piesa { -fx-font-weight: bold; }
+.rand-piesa:pauza .titlu-piesa { -fx-font-style: italic; }
+
+/* ===== PLAY / PAUZĂ ===== */
+.play {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 20;
+    -fx-border-color: -color-primar;
+    -fx-border-radius: 20;
+    -fx-text-fill: -color-primar;
+    -fx-font-weight: bold;
+    -fx-padding: 8 24;
+    -fx-cursor: hand;
+}
+.play:hover    { -fx-border-color: -color-focus; }
+.play:pressed  { -fx-translate-y: 1; }
+.play:selected {
+    -fx-background-color: -color-primar;
+    -fx-text-fill: -color-text-pe-primar;
+}
+
+/* ===== VOLUM ===== */
+.volum { -fx-text-fill: -color-text-secundar; }
+.volum:mut {                             /* pseudo-clasa proprie: volum 0 */
+    -fx-text-fill: -color-pericol;
+    -fx-font-style: italic;
+}
+.slider .track {
+    -fx-background-color: -color-contur;
+    -fx-background-radius: 4;
+}
+.slider .thumb {
+    -fx-background-color: -color-primar;
+    -fx-background-insets: 0;
+    -fx-background-radius: 10;
+}
+.slider .thumb:hover {
+    -fx-background-color: -color-focus;
+    -fx-scale-x: 1.25;
+    -fx-scale-y: 1.25;
+}

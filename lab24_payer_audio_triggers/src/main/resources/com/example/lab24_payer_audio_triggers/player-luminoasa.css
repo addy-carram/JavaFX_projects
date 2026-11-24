@@ -1,0 +1,23 @@
+.root {
+    -fx-base: #fff7ec;
+    -fx-background: #fdf9f3;
+    -fx-control-inner-background: #ffffff;
+    -fx-accent: #d9730d;
+    -fx-focus-color: #d9730d;
+    -fx-faint-focus-color: #d9730d33;
+
+    -color-fundal-sus: #ffdcae;
+    -color-fundal-jos: #fdf9f3;
+    -color-antet: #3a2208;
+    -color-text-antet: #fff7ec;
+    -color-card: #ffffff;
+    -color-contur: #ecd9bd;
+    -color-primar: #d9730d;
+    -color-focus: #1971c2;
+    -color-text: #2b1a08;
+    -color-text-secundar: #7a5a36;
+    -color-text-rand: #2b1a08;
+    -color-text-pe-primar: #ffffff;
+    -color-pericol: #c92a2a;
+    -color-umbra-text: rgba(255, 255, 255, 0.5);
+}
