@@ -1,0 +1,76 @@
+/* ===== REGULI PE TIP DE CONTROL (TargetType) ===== */
+.root {
+    -fx-background-color: #12082b;      /* fundal închis, vizibil dacă lipsește poza */
+    -fx-font-family: "Segoe UI", sans-serif; /* font moștenit de toate controalele */
+    -fx-font-size: 14px;                /* mărimea de bază, moștenită */
+}
+.label {
+    -fx-text-fill: white;               /* text alb = contrast maxim pe violet */
+    -fx-font-weight: bold;              /* text îngroșat */
+    -fx-font-family: "Segoe UI", sans-serif; /* font uniform pe etichete */
+}
+.button {
+    -fx-background-radius: 20;          /* colțuri rotunjite */
+    -fx-padding: 8 20;                  /* spațiu interior */
+    -fx-cursor: hand;                   /* cursor de mână */
+}
+
+/* ===== FUNDALUL FERESTREI ===== */
+.poza {
+    -fx-opacity: 0.55;                  /* poza se amestecă cu violetul */
+}
+.vel {
+    -fx-background-color: rgba(76, 29, 149, 0.55); /* văl violet peste toată poza */
+}
+
+/* ===== BILETUL (clasa .bilet) ===== */
+.bilet {
+    -fx-background-color: linear-gradient(to bottom right, #5b21b6, #7c3aed 55%, #a855f7); /* fundal violet degrade */
+    -fx-background-radius: 16;          /* colțuri rotunjite */
+    -fx-border-color: #e9d5ff;          /* contur lila deschis, contrast cu fundalul */
+    -fx-border-width: 2;                /* grosimea conturului */
+    -fx-border-style: dashed;           /* contur întrerupt, ca la bilet */
+    -fx-border-radius: 16;              /* conturul urmează colțurile */
+    -fx-effect: dropshadow(gaussian, rgba(168,85,247,0.55), 22, 0.2, 0, 6); /* strălucire violet */
+}
+
+/* ===== TEXTE ===== */
+.continut {
+    -fx-padding: 20 24;                 /* distanța textului față de marginea biletului */
+}
+.bilet .label {                         /* descendent: toate etichetele din bilet */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 4, 0.3, 0, 1); /* umbră mică pentru lizibilitate */
+}
+.eticheta {
+    -fx-text-fill: #d8b4fe;             /* lila deschis */
+    -fx-font-size: 11px;                /* text mic, de antet */
+}
+.artist {
+    -fx-text-fill: white;               /* titlu alb */
+}
+.piesa {
+    -fx-text-fill: #e9d5ff;             /* subtitlu lila */
+    -fx-font-size: 16px;                /* mărime medie */
+    -fx-font-style: italic;             /* text înclinat */
+}
+.detalii > .data {                      /* copil direct al .detalii */
+    -fx-text-fill: #fde68a;             /* data în galben cald = accent */
+    -fx-font-size: 17px;                /* data mai mare decât locul */
+}
+.detalii > .loc {
+    -fx-text-fill: #f5f3ff;             /* loc alb-lila */
+    -fx-font-size: 13px;                /* mai mic */
+}
+.jos {
+    -fx-alignment: bottom-left;         /* data/locul și codul se aliniază jos */
+}
+
+/* ===== CODUL BILETULUI (id) ===== */
+#cod {
+    -fx-font-family: "Consolas", monospace; /* font monospace */
+    -fx-font-size: 13px;                /* mărime */
+    -fx-text-fill: #fde68a;             /* culoare accent */
+    -fx-background-color: rgba(18,8,43,0.75); /* chenar întunecat în jurul codului */
+    -fx-background-radius: 6;           /* colțuri rotunjite */
+    -fx-padding: 4 10;                  /* spațiu interior */
+}

@@ -1,0 +1,76 @@
+/* ===== REGULI PE TIP DE CONTROL (TargetType) ===== */
+.root {
+    -fx-background-color: #12082b;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+.label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+.button {
+    -fx-background-radius: 20;
+    -fx-padding: 8 20;
+    -fx-cursor: hand;
+}
+
+/* ===== FUNDALUL FERESTREI ===== */
+.poza {
+    -fx-opacity: 0.55;
+}
+.vel {
+    -fx-background-color: rgba(76, 29, 149, 0.55);
+}
+
+/* ===== BILETUL (clasa .bilet) ===== */
+.bilet {
+    -fx-background-color: linear-gradient(to bottom right, #5b21b6, #7c3aed 55%, #a855f7);
+    -fx-background-radius: 16;
+    -fx-border-color: #e9d5ff;
+    -fx-border-width: 2;
+    -fx-border-style: dashed;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(168,85,247,0.55), 22, 0.2, 0, 6);
+}
+
+/* ===== TEXTE ===== */
+.continut {
+    -fx-padding: 20 24;
+}
+.bilet .label {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 4, 0.3, 0, 1);
+}
+.eticheta {
+    -fx-text-fill: #d8b4fe;
+    -fx-font-size: 11px;
+}
+.artist {
+    -fx-text-fill: white;
+}
+.piesa {
+    -fx-text-fill: #e9d5ff;
+    -fx-font-size: 16px;
+    -fx-font-style: italic;
+}
+.detalii > .data {
+    -fx-text-fill: #fde68a;
+    -fx-font-size: 17px;
+}
+.detalii > .loc {
+    -fx-text-fill: #f5f3ff;
+    -fx-font-size: 13px;
+}
+.jos {
+    -fx-alignment: bottom-left;
+}
+
+/* ===== CODUL BILETULUI (id) ===== */
+#cod {
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 13px;
+    -fx-text-fill: #fde68a;
+    -fx-background-color: rgba(18,8,43,0.75);
+    -fx-background-radius: 6;
+    -fx-padding: 4 10;
+}

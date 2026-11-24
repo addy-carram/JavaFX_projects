@@ -1,0 +1,14 @@
+/* se aplică doar panoului de acțiuni și descendenților lui */
+.actiuni {
+    -fx-alignment: center-right;        /* butoanele se aliniază la dreapta */
+}
+.actiuni .button {                      /* butoanele din panou */
+    -fx-background-color: rgba(18,8,43,0.55); /* fundal întunecat translucid */
+    -fx-border-color: #c084fc;          /* contur violet deschis */
+    -fx-border-radius: 20;              /* conturul rotunjit */
+    -fx-text-fill: #e9d5ff;             /* text lila */
+}
+.actiuni .primar {
+    -fx-background-color: #a855f7;      /* butonul principal plin */
+    -fx-text-fill: white;               /* text alb */
+}

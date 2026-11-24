@@ -1,0 +1,14 @@
+
+.actiuni {
+    -fx-alignment: center-right;
+}
+.actiuni .button {
+    -fx-background-color: rgba(18,8,43,0.55);
+    -fx-border-color: #c084fc;
+    -fx-border-radius: 20;              
+    -fx-text-fill: #e9d5ff;
+}
+.actiuni .primar {
+    -fx-background-color: #a855f7;
+    -fx-text-fill: white;
+}
