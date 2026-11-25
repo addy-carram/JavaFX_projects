@@ -1,0 +1,338 @@
+/* ===== Culori (looked-up colors) ===== */
+.root {
+    -bg: #EDEEF1;
+    -panel: #F6F7F9;
+    -surface: #FFFFFF;
+    -accent: #E23A2E;
+    -accent-hover: #C92E23;
+    -text: #1E2026;
+    -muted: #8B909A;
+    -line: #E5E7EB;
+    -accent-soft: #FDECEA;
+
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: -text;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.app-bg { -fx-background-color: -bg; }
+
+/* ===== Carduri și panoul mare ===== */
+.card {
+    -fx-background-color: -surface;
+    -fx-background-radius: 24;
+    -fx-effect: dropshadow(gaussian, rgba(20, 24, 40, 0.06), 18, 0, 0, 4);
+}
+
+.main-panel {
+    -fx-background-color: -panel;
+    -fx-background-radius: 32;
+}
+
+.content { -fx-padding: 8 24 8 24; }
+
+/* ===== Sidebar ===== */
+.logo {
+    -fx-text-fill: -accent;
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-padding: 0 0 0 6;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-text-fill: -muted;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 10 14 10 14;
+    -fx-background-radius: 14;
+    -fx-alignment: center-left;
+    -fx-graphic-text-gap: 8;
+    -fx-cursor: hand;
+}
+.menu-item:hover { -fx-background-color: #F3F4F6; }
+.menu-item:selected {
+    -fx-background-color: transparent;
+    -fx-text-fill: -accent;
+}
+.menu-item .dot {
+    -fx-background-color: -accent;
+    -fx-background-radius: 4;
+    -fx-min-width: 6;  -fx-pref-width: 6;  -fx-max-width: 6;
+    -fx-min-height: 6; -fx-pref-height: 6; -fx-max-height: 6;
+    -fx-opacity: 0;
+}
+.menu-item:selected .dot { -fx-opacity: 1; }
+
+.separator:horizontal .line {
+    -fx-border-color: -line transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+    -fx-background-color: transparent;
+}
+
+.side-heading {
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-padding: 0 0 0 6;
+}
+
+.muted { -fx-text-fill: -muted; }
+
+/* ===== Bara de sus ===== */
+.top-bar {
+    -fx-padding: 22 24 14 24;
+}
+
+.search-box {
+    -fx-background-color: -surface;
+    -fx-background-radius: 22;
+    -fx-padding: 0 16 0 16;
+    -fx-spacing: 8;
+    -fx-alignment: center-left;
+    -fx-min-height: 44;
+    -fx-pref-height: 44;
+    -fx-max-height: 44;
+}
+
+.search-field {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-prompt-text-fill: -muted;
+    -fx-font-size: 13px;
+}
+
+.icon-search {
+    -fx-background-color: -accent;
+    -fx-shape: "M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z";
+    -fx-min-width: 18;  -fx-pref-width: 18;  -fx-max-width: 18;
+    -fx-min-height: 18; -fx-pref-height: 18; -fx-max-height: 18;
+}
+
+.chip {
+    -fx-background-color: -surface;
+    -fx-background-insets: 0;
+    -fx-background-radius: 18;
+    -fx-text-fill: -text;
+    -fx-font-weight: 600;
+    -fx-padding: 9 16 9 16;
+    -fx-cursor: hand;
+}
+.chip:hover { -fx-background-color: #F0F1F4; }
+.chip:selected {
+    -fx-background-color: -accent;
+    -fx-text-fill: white;
+}
+
+.btn-accent {
+    -fx-background-color: -accent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-padding: 12 22 12 22;
+    -fx-cursor: hand;
+}
+.btn-accent:hover { -fx-background-color: -accent-hover; }
+.btn-accent:disabled { -fx-opacity: 0.45; }
+
+/* ===== Stare ===== */
+.status-bar { -fx-padding: 10 28 16 28; }
+.status-label { -fx-text-fill: -muted; -fx-font-size: 12px; }
+
+/* ===== Provizoriu ===== */
+.placeholder {
+    -fx-text-fill: -muted;
+    -fx-font-size: 14px;
+}
+/* ===== TableView ===== */
+.table-view {
+    -fx-background-color: -surface;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0;
+    -fx-padding: 8;
+    -fx-border-color: transparent;
+}
+.table-view .column-header-background { -fx-background-color: transparent; }
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent -line transparent;
+    -fx-size: 42;
+}
+.table-view .column-header .label {
+    -fx-text-fill: -muted;
+    -fx-font-weight: 700;
+    -fx-alignment: center-left;
+}
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #F0F1F4 transparent;
+    -fx-cell-size: 46px;
+}
+.table-row-cell:hover { -fx-background-color: #F7F8FA; }
+.table-row-cell:filled:selected { -fx-background-color: -accent-soft; }
+.table-cell {
+    -fx-alignment: center-left;
+    -fx-padding: 0 10 0 10;
+    -fx-text-fill: -text;
+    -fx-border-color: transparent;
+}
+.table-row-cell:filled:selected .table-cell { -fx-text-fill: -text; }
+.col-center { -fx-alignment: center; }
+/* ===== Titluri de secțiune + ScrollPane transparent ===== */
+.section-title { -fx-font-size: 18px; -fx-font-weight: 700; }
+.scroll-pane { -fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0; }
+.scroll-pane > .viewport { -fx-background-color: transparent; }
+
+/* ===== Hero ===== */
+.hero { -fx-background-color: #2A2C33; -fx-background-radius: 28; }
+.hero-gradient {
+    -fx-background-color: linear-gradient(to right,
+    rgba(12, 12, 16, 0.92) 0%, rgba(12, 12, 16, 0.60) 55%, rgba(12, 12, 16, 0.05) 100%);
+}
+.badge {
+    -fx-background-color: -accent;
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-padding: 5 12 5 12;
+    -fx-background-radius: 12;
+}
+.hero-title { -fx-text-fill: white; -fx-font-size: 34px; -fx-font-weight: 800; }
+.hero-meta  { -fx-text-fill: rgba(255, 255, 255, 0.82); -fx-font-size: 13px; }
+.hero-desc  { -fx-text-fill: rgba(255, 255, 255, 0.78); -fx-font-size: 13px; }
+
+.btn-light {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 22;
+    -fx-text-fill: -text;
+    -fx-font-weight: 700;
+    -fx-padding: 12 22 12 22;
+    -fx-cursor: hand;
+}
+.btn-light:hover { -fx-background-color: #F0F1F4; }
+.btn-light:disabled { -fx-opacity: 0.5; }
+
+.btn-ghost {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 22;
+    -fx-border-color: rgba(255, 255, 255, 0.5);
+    -fx-border-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-padding: 12 22 12 22;
+    -fx-cursor: hand;
+}
+.btn-ghost:hover { -fx-background-color: rgba(255, 255, 255, 0.12); }
+.btn-ghost:disabled { -fx-opacity: 0.5; }
+
+/* ===== Carduri ===== */
+.poster-card {
+    -fx-background-color: #D9DBE0;
+    -fx-background-radius: 22;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(20, 24, 40, 0.12), 12, 0, 0, 3);
+}
+.poster-card.sold-out { -fx-opacity: 0.55; }
+.card-gradient {
+    -fx-background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.88) 100%);
+}
+.card-title { -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: 700; }
+.card-meta  { -fx-text-fill: rgba(255, 255, 255, 0.82); -fx-font-size: 11px; }
+.badge-soldout {
+    -fx-background-color: rgba(30, 32, 38, 0.92);
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-padding: 5 12 5 12;
+    -fx-background-radius: 12;
+}
+
+.round-btn, .round-btn-small {
+    -fx-background-color: -accent;
+    -fx-background-radius: 20;
+    -fx-alignment: center;
+}
+.round-btn {
+    -fx-min-width: 34;  -fx-pref-width: 34;  -fx-max-width: 34;
+    -fx-min-height: 34; -fx-pref-height: 34; -fx-max-height: 34;
+}
+.round-btn-small {
+    -fx-min-width: 30;  -fx-pref-width: 30;  -fx-max-width: 30;
+    -fx-min-height: 30; -fx-pref-height: 30; -fx-max-height: 30;
+}
+.icon-play {
+    -fx-background-color: white;
+    -fx-shape: "M8 5v14l11-7z";
+    -fx-min-width: 12;  -fx-pref-width: 12;  -fx-max-width: 12;
+    -fx-min-height: 12; -fx-pref-height: 12; -fx-max-height: 12;
+}
+
+/* ===== „Urmează azi” ===== */
+.mini-item { -fx-cursor: hand; -fx-padding: 4; }
+.mini-item:hover { -fx-background-color: #F6F7F9; -fx-background-radius: 14; }
+.mini-poster { -fx-background-color: #D9DBE0; }
+.mini-title { -fx-font-size: 13px; -fx-font-weight: 700; }
+/* ===== Modale ===== */
+.modal-shell { -fx-background-color: transparent; }
+.modal-card {
+    -fx-background-color: -surface;
+    -fx-background-radius: 28;
+    -fx-padding: 28;
+    -fx-effect: dropshadow(gaussian, rgba(10, 12, 24, 0.28), 28, 0, 0, 8);
+}
+.modal-title { -fx-font-size: 26px; -fx-font-weight: 800; }
+.modal-desc  { -fx-text-fill: #4B5058; -fx-font-size: 13px; }
+.field-label { -fx-text-fill: -muted; -fx-font-size: 11px; -fx-font-weight: 700; }
+.total-label { -fx-text-fill: -accent; -fx-font-size: 16px; -fx-font-weight: 800; }
+.msg-ok      { -fx-text-fill: #2E9B5B; -fx-font-size: 12px; -fx-font-weight: 700; }
+
+.form-field {
+    -fx-background-color: #F3F4F7;
+    -fx-background-radius: 12;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+    -fx-border-radius: 12;
+    -fx-padding: 10 12 10 12;
+}
+.form-field:focused { -fx-border-color: -accent; }
+
+.btn-outline {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 22;
+    -fx-border-color: -accent;
+    -fx-border-radius: 22;
+    -fx-text-fill: -accent;
+    -fx-font-weight: 700;
+    -fx-padding: 11 20 11 20;
+    -fx-cursor: hand;
+}
+.btn-outline:hover { -fx-background-color: -accent-soft; }
+
+.btn-text {
+    -fx-background-color: transparent;
+    -fx-text-fill: -muted;
+    -fx-font-weight: 700;
+    -fx-cursor: hand;
+}
+.btn-text:hover { -fx-text-fill: -text; }
+/* ===== Elemente de formular în modalul ADĂUGARE ===== */
+.msg-error { -fx-text-fill: -accent; -fx-font-size: 12px; -fx-font-weight: 700; }
+
+.combo-box.form-field { -fx-padding: 4 4 4 4; }
+.combo-box.form-field:focused { -fx-border-color: -accent; }
+.combo-box.form-field .list-cell { -fx-background-color: transparent; -fx-text-fill: -text; }
+
+.text-area.form-field { -fx-padding: 0; -fx-background-color: transparent; }
+.text-area.form-field .content {
+    -fx-background-color: #F3F4F7;
+    -fx-background-radius: 12;
+}
+.text-area.form-field:focused { -fx-border-color: -accent; }
